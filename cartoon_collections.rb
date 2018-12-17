@@ -4,24 +4,17 @@ def roll_call_dwarves(dwarves)
     puts "#{number}. #{name}"
   end
 end
-
-
-def summon_captain_planet(planeteer_calls)
+  def summon_captain_planet(planeteer_calls)
     planeteer_calls.map {|element| element.capitalize + "!"}
 end
-
-
-
-def long_planeteer_calls(array)
+  def long_planeteer_calls(array)
   if array.any? { |e| e.length > 4 }
     true
   else
     false
   end
 end
-
-
-  cheese_types = ["cheddar", "gouda", "camembert"]
+   cheese_types = ["cheddar", "gouda", "camembert"]
 def find_the_cheese(array)
 cheese_types = ["cheddar", "gouda", "camembert"]
 array.find do |i|
